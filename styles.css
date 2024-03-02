@@ -1,0 +1,250 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px px;
+    position: fixed; /* Fixed position */
+    top: 0; /* At the top of the viewport */
+    right: 0; /* At the right of the viewport */
+    width: 100%; /* Full width */
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+    float: left; /* Float to right */
+  }
+  
+  header nav {
+    float:right; /* Float to left */
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 1px;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+    right: 10px;
+    
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Hero Section Styles */
+  #hero {
+    background-image: url('https://source.unsplash.com/random/?luxury light shop,led,rgb'); /* Change 'hero-bg.jpg' to your image path */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  #hero h2 {
+    font-size: 3em;
+  }
+  
+  #hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #cc5500;
+  }
+  
+  /* Products Section Styles */
+  #products {
+    padding: 80px 0;
+  }
+  
+  #products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* Product Card Styles */
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .product-card p {
+    margin: 0;
+    padding: 0 10px;
+  }
+  
+  .product-card .price {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    padding: 5px 10px;
+  }
+  
+  .product-card .btn {
+    display: block;
+    background-color: #FFD700;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .product-card .btn:hover {
+    background-color: #FFA500;
+  }
+  
+  
+  /* Gallery Section Styles */
+  #gallery {
+    padding: 80px 0;
+  }
+  
+  #gallery h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* Gallery Section Styles */
+#gallery {
+    padding: 50px 0;
+  }
+  
+  #gallery .container {
+    text-align: center;
+  }
+  
+  #gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .gallery-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-images img:hover {
+    transform: scale(1.05);
+  }
+  
+ 
+  /* Contact Section Styles */
+  #contact {
+    padding: 80px 0;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  /* Contact Section Styles */
+#contact {
+    padding: 50px 0;
+  }
+  
+  #contact .container {
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  #contact p a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #contact p a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Media Queries */
+  @media(max-width: 768px) {
+    header {
+      padding: 20px;
+    }
+  
+    #hero {
+      padding: 80px 0;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  }
+  
