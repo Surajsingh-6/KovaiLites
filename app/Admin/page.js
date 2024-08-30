@@ -8,16 +8,16 @@ function login() {
                 <form>
                     <div className="mb-4">
                         <label
-                            htmlFor="email"
+                            htmlFor="Username"
                             className="block text-gray-700 font-bold mb-2"
                         >
-                            Email
+                            Username
                         </label>
                         <input
-                            type="email"
-                            id="email"
+                            type="Username"
+                            id="Username"
                             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
-                            placeholder="Enter your email"
+                            placeholder="Enter your Username"
                         />
                     </div>
                     <div className="mb-4">

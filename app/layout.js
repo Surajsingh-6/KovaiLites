@@ -9,9 +9,9 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
 export const meta = {
-  title: 'My App',
-  description: 'My app description',
-  keywords: 'app, myapp',
+  title: 'Kovai Lites',
+  description: 'Kovai Lites is Led Wholesale and Retail Shop in Coimbatore',
+  keywords: 'Led, Lights, Wholesale, Retail, Coimbatore,wall mounted',
 };
 
 const badScript = Bad_Script({ subsets: ['latin'], weight: '400' });

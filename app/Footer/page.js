@@ -46,7 +46,7 @@ function page() {
                     </Link>
                 </div>
             </div>
-            <div className="w-full bg-[--bga] text-[--bgaa] text-center text-black text-sm">
+            <div className="w-full bg-[#182540] text-[--bgaa] text-center  text-sm">
                 ❤️ MADE BY SURAJ SINGH ❤️
             </div>
         </div>
