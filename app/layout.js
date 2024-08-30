@@ -3,6 +3,10 @@ import { Bruno_Ace_SC } from 'next/font/google';
 import { Bruno_Ace } from 'next/font/google';
 import "./globals.css";
 import Navbar from './Navbar/page';
+import Footer from './Footer/page';
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 export const meta = {
   title: 'My App',
@@ -20,6 +24,7 @@ const RootLayout = ({ children }) => {
       <body className={`${badScript.className} ${brunoAceSC.className} ${brunoAce.className}`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-
+import Location from "./Location/page";
 function page() {
     return (
       <div className="min-h-screen w-full px-auto mt-16">
@@ -16,7 +16,7 @@ function page() {
         </button>
       </div>
       <div className="w-full flex flex-col justify-center items-center mt-10">
-        <h3 className="text-xl m-5">FEATURED ON YOUTUBE</h3>
+        <h3 className="text-xl m-5 text-center">FEATURED ON YOUTUBE</h3>
         <div className="w-5/6">
         <div style={{ position: "relative", paddingTop: "56.25%" }}>
           <iframe
@@ -36,11 +36,14 @@ function page() {
       <div className="min-h-screen w-full my-10">
         <h3 className="text-3xl w-full text-center mt-20 bg-[var(--bgaa)]">OUR BEST SELLERS</h3>
         <div className="w-full  mt-12 flex flex-wrap items-center relative mx-auto gap-10">
-          <img src="/bes1.jpg" alt="best sellers"  className="mx-auto w-96 bg-[var(--bga)] p-10"/>
-          <img src="/bes2.jpg" alt="best sellers 2" className="mx-auto w-[25rem] bg-[var(--bga)] p-10" />
+          <img src="/bes1.jpg" alt="best sellers"  className="mx-auto w-96 h-[30rem] object-contain  bg-[var(--bga)] p-10"/>
+          <img src="/bes2.jpg" alt="best sellers 2" className="mx-auto w-96 h-[30rem] object-contain  bg-[var(--bga)] p-10" />
+        </div>
+        <div className="w-full flex justify-center items-center my-5">
         <button className="bg-[var(--bgaa)] rounded-3xl text-xl p-2 mx-auto">EXPORE MORE</button>
         </div>
       </div>
+      <Location />
       </div>
     );
 }
