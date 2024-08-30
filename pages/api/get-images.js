@@ -1,3 +1,4 @@
+// pages/api/get-images.js
 import clientPromise from '../../lib/mongodb';
 
 export default async function handler(req, res) {
@@ -5,9 +6,12 @@ export default async function handler(req, res) {
   try {
     console.log('Connecting to database...');
     const client = await clientPromise;
-    console.log('Connected to database.');
+    if (!client) {
+      throw new Error('Failed to connect to MongoDB client');
+    }
 
-    const db = client.db();
+    console.log('Connected to database.');
+    const db = client.db(); // Ensure this is valid
     const imagesCollection = db.collection('images');
 
     console.log('Fetching images...');
