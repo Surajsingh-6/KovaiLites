@@ -1,5 +1,4 @@
-"use client"
-// app/upload/page.js or pages/upload.js
+"use client";
 import { useState } from 'react';
 
 export default function UploadPage() {
@@ -35,7 +34,7 @@ export default function UploadPage() {
   };
 
   return (
-    <div>
+    <div className='h-96 w-full'>
       <h1>Upload Image Details</h1>
       <form onSubmit={handleFormSubmit}>
         <input
