@@ -1,5 +1,6 @@
 import React from "react";
 import Location from "./Location/page";
+import Link from "next/link";
 function page() {
     return (
       <div className="min-h-screen w-full px-auto mt-16">
@@ -12,7 +13,7 @@ function page() {
       </div>
       <div className="text-center mt-5">
         <button className="bg-[var(--bgaa)] text-black px-5 py-2 rounded-3xl">
-        Explore Collections
+        <Link href="/collection">EXPORE COLLECTIONS</Link>
         </button>
       </div>
       <div className="w-full flex flex-col justify-center items-center mt-10">
@@ -40,7 +41,7 @@ function page() {
           <img src="/bes2.jpg" alt="best sellers 2" className="mx-auto w-96 h-[30rem] object-contain  bg-[var(--bga)] p-10" />
         </div>
         <div className="w-full flex justify-center items-center my-5">
-        <button className="bg-[var(--bgaa)] rounded-3xl text-xl p-2 mx-auto">EXPORE MORE</button>
+        <button className="bg-[var(--bgaa)] rounded-3xl text-xl p-2 mx-auto"><Link href="/collection">EXPORE MORE</Link></button>
         </div>
       </div>
       <Location />
