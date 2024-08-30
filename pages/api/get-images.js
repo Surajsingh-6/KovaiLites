@@ -1,16 +1,21 @@
 // pages/api/get-images.js
-import clientPromise from '../../lib/mongodb';
+import connectToDatabase from '../../lib/mongodb';
 
 export default async function handler(req, res) {
   try {
-    const client = await clientPromise;
-    const db = client.db();
-    const imagesCollection = db.collection('images');
+    console.log('Connecting to database...');
+    await connectToDatabase();
+    console.log('Database connected.');
 
-    const images = await imagesCollection.find({}).toArray();
-    console.log('Fetched images:', images);
-    res.status(200).json({ success: true, images });
+    // Your code to fetch images here
+    console.log('Fetching images...');
+    // Simulate a delay for testing
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    console.log('Images fetched.');
+
+    res.status(200).json({ success: true, images: [] });  // Adjust response as needed
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message });
+    console.error('Error in API route:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 }
