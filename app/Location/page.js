@@ -92,7 +92,7 @@ function page() {
                 </div>
             </div>
             <div className="w-full bg-[#182540] text-[--bgaa] text-center  text-sm">
-                ❤️ MADE BY SURAJ SINGH ❤️
+                <Link href="tel:+917708734164">❤️ MADE BY SURAJ SINGH ❤️</Link>
             </div>
         </div>
         </div>

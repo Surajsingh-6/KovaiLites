@@ -8,6 +8,31 @@
   --bgaa:#FCA311;
 }
 
+.anime{
+  opacity: 1;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  animation: animate 3s ease-out;  
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  80%{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+    visibility: hidden;
+  }
+}
 .bad-script-regular {
   font-family: "Bad Script", cursive;
   font-weight: 400;

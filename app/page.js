@@ -5,6 +5,7 @@ function page() {
     return ( <div>
       <div className="min-h-screen w-full px-auto mt-16">
       <div className="text-2xl font-semibold text-center leading-[4.5rem]">
+
         <span className="text-[var(--bgaa)]">Brighten</span> Your Day,{" "}
         <br /> The{" "}
         <span className="text-[var(--bgaa)]">Affordable</span> Way,{" "}
