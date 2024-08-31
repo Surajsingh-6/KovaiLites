@@ -18,15 +18,15 @@ export default function HomePage() {
   }, []);
 
   return (<div>
-      <h1>Our Collections</h1>
+      <h1 >Our Collections</h1>
     <div className='flex w-full min-h-screen'>
       <div className='flex flex-wrap mt-5'>
         {images.length === 0 ? (
-          <p>No images found.</p>
+          <p>LOADING...</p>
         ) : (
           images.map((image) => (
-            <div key={image._id}>
-              <h2 className='mx-5'>{image.title}</h2>
+            <div key={image._id} className='lg:mx-auto'>
+              <h2 className='w-full text-center'>{image.title.toUpperCase()}</h2>
               <img src={image.imageUrl} alt={image.title} className='mx-auto w-96 h-[30rem] object-contain  bg-[var(--bga)] p-10  mb-10' />
               
             </div>

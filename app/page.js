@@ -2,7 +2,7 @@ import React from "react";
 import Location from "./Location/page";
 import Link from "next/link";
 function page() {
-    return (
+    return ( <div>
       <div className="min-h-screen w-full px-auto mt-16">
       <div className="text-2xl font-semibold text-center leading-[4.5rem]">
         <span className="text-[var(--bgaa)]">Brighten</span> Your Day,{" "}
@@ -44,7 +44,9 @@ function page() {
         <button className="bg-[var(--bgaa)] rounded-3xl text-xl p-2 mx-auto"><Link href="/collection">EXPORE MORE</Link></button>
         </div>
       </div>
-      <Location />
+      
+      </div>
+      
       </div>
     );
 }
