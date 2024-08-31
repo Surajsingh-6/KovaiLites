@@ -4,13 +4,13 @@ import Link from "next/link";
 function page() {
     return ( <div>
       <div className="min-h-screen w-full px-auto mt-16">
-      <div className="text-2xl font-semibold text-center leading-[4.5rem]">
+      <div className="text-2xl font-semibold text-center leading-[4.5rem] ">
 
-        <span className="text-[var(--bgaa)]">Brighten</span> Your Day,{" "}
+        <span className="text-[var(--bgaa)] animate-text">Brighten</span> Your Day,{" "}
         <br /> The{" "}
-        <span className="text-[var(--bgaa)]">Affordable</span> Way,{" "}
+        <span className="text-[var(--bgaa)] anianimate-text">Affordable</span> Way,{" "}
         <br /> Led Variety on{" "}
-        <span className="text-[var(--bgaa)]">Display</span>.
+        <span className="text-[var(--bgaa)] animate-text">Display</span>.
       </div>
       <div className="text-center mt-5">
         <button className="bg-[var(--bgaa)] text-black px-5 py-2 rounded-3xl">
@@ -18,7 +18,7 @@ function page() {
         </button>
       </div>
       <div className="w-full flex flex-col justify-center items-center mt-10">
-        <h3 className="text-xl m-5 text-center">FEATURED ON YOUTUBE</h3>
+        <h3 className="text-xl m-5 text-center ">FEATURED ON YOUTUBE</h3>
         <div className="w-5/6">
         <div style={{ position: "relative", paddingTop: "56.25%" }}>
           <iframe

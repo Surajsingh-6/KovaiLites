@@ -4,7 +4,7 @@ import { faHouse, faPhone, faLocationDot, faCartShopping, faMagnifyingGlass } fr
 import Link from 'next/link';
 function Mnavbar() {
 return (
-    <div className='lg:hidden'>
+    <div className='md:hidden'>
         <div className='h-12 w-full bg-[#182540]'></div>
         <div className='h-12 w-5/6 rounded-3xl mx-auto flex justify-evenly items-center bg-[#ffffffc9] fixed bottom-0 left-1/2 transform -translate-x-1/2'>
             <div className='hover:text-[--bgaa]'><Link href="/Location"><FontAwesomeIcon icon={faLocationDot} /></Link></div>
