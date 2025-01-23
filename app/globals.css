@@ -13,7 +13,7 @@
   visibility: hidden;
   position: fixed;
   top: 0;
-  animation: animate 3s ease-out;  
+  animation: animate 4s ease-out;  
 }
 .animate-text{
   animation: bounce 2s infinite;
