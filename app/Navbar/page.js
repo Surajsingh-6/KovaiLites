@@ -12,7 +12,7 @@ function page() {
             <div className="hidden md:flex gap-5 items-center justify-between ">
                 <div><Link href="/">Home</Link></div>
                 <div><Link href="/Search">Search</Link></div>
-                <div><Link href="/Collections">Collections</Link></div>
+                <div><Link href="/collection">Collections</Link></div>
                 <div><Link href="/Location">Location</Link></div>
                 <div><Link href="ttel:+917708734164">Contact</Link></div>
             </div>
